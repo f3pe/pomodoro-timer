@@ -21,7 +21,10 @@ function toggleTimer() {
         interval = setInterval(() => {
             timer -= 1;
             setTimer();
-            if (timer <= 0){clearInterval(interval);}
+            if (timer <= 0){
+                clearInterval(interval);
+                document.getElementById('audioPlayer').play()
+            }
         }, 10);
         playPauseButton.setAttribute('action', 'pause');
         playPauseButton.innerHTML = '<i class="fa-solid fa-pause"></i>';
