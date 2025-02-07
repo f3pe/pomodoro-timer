@@ -32,15 +32,17 @@ main{
     height: 90vh;
 }
 
-#timer{
+#container{
+    width: 18em;
     background-color: #323232;
+    border-radius: 0.4em;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+#timer{
     font-family: 'digital', sans-serif;
     font-size: 6em;
     color: #D40909;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-    border-radius: 0.1em;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 #options{
