@@ -14,3 +14,8 @@ Os pomodoros da web tem muitas cores? Muitos detalhes que distraem? Aqui está s
 O site está online? ✅
 
 Acesse no link ao lado: [Pomodoro-timer](https://pomodoro-timer-chi-roan.vercel.app/)
+
+## To-do:
+- [ ] Adicionar opção de personalizar o tempo de descanço e de foco
+- [ ] Mensagem ou indicação visual de mudança de estado de descaço para foco e vice-versa 
+- [ ] Opção de transição de modo claro e modo escuro
