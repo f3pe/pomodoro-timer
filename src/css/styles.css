@@ -20,8 +20,11 @@ body {
 }
 
 #titulo{
-    font-size: 5em;
+    font-size: min(5rem, 15vw);
     color: #e0e0e0;
+    position: absolute;
+    width: 100vw;
+    text-align: center;
 }
 
 main{
@@ -29,7 +32,7 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 90vh;
+    height: 100vh;
 }
 
 #container{
@@ -54,8 +57,10 @@ main{
 #options button{
     background-color: #404040;
     color: #e0e0e0;
-    padding: 1em 2.5em;
+    padding: 1em 0em;
     border-radius: 0.5em;
+    width: 8.3rem;
+    height: auto;
     cursor: pointer;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
 }
