@@ -1,10 +1,10 @@
-let focusTime = 150000, breakTime = 30000;
+let focusTime = 1500, breakTime = 300;
 
-let interval = 0, timer = focusTime; 
+let interval, timer = focusTime; 
 
 function formatTime(time){
-    const minutes = Math.floor((time % 360000) / 6000);
-    const seconds = Math.floor((time % 6000) / 100);
+    const minutes = Math.floor(time / 60);
+    const seconds = Math.floor((time % 60));
 
     return `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
 }
@@ -25,7 +25,7 @@ function toggleTimer() {
                 clearInterval(interval);
                 document.getElementById('audioPlayer').play()
             }
-        }, 10);
+        }, 1000);
         playPauseButton.setAttribute('action', 'pause');
         playPauseButton.innerHTML = '<i class="fa-solid fa-pause"></i>';
     }else{
