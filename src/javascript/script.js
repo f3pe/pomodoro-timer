@@ -40,12 +40,12 @@ function changeMode(){
     let clockMode = breakFocusButton.getAttribute('action');
 
     if (clockMode == 'break'){
-        timer = breakTime
+        timer = breakTime;
         setTimer();
         breakFocusButton.setAttribute('action', 'focus');
         breakFocusButton.innerHTML = '<i class="fa-solid fa-bullseye"></i>';
     }else{
-        timer = focusTime
+        timer = focusTime;
         setTimer();
         breakFocusButton.setAttribute('action', 'break');
         breakFocusButton.innerHTML = '<i class="fa-solid fa-mug-hot"></i>';
@@ -58,3 +58,28 @@ function changeMode(){
 
 document.getElementById('play').addEventListener("click", toggleTimer);
 document.getElementById('break').addEventListener("click", changeMode);
+
+function redefinir() {
+    do{
+        focusTime = (prompt("Quantos minutos de foco?") * 60);
+        if(isNaN(focusTime) || focusTime < 0){
+            alert("Digite um número valido: ");
+        }
+    }while(isNaN(focusTime) || focusTime < 0);
+    do{
+        breakTime = (prompt("Quantos minutos de pausa?") * 60);
+        if(isNaN(breakTime) || breakTime < 0){
+            alert("Digite um número valido: ");
+        }
+    }while(isNaN(breakTime) || breakTime < 0);
+
+    clearInterval(interval);
+    let breakFocusButton = document.getElementById('break');
+    timer = focusTime;
+    setTimer();
+    breakFocusButton.setAttribute('action', 'break');
+    breakFocusButton.innerHTML = '<i class="fa-solid fa-mug-hot"></i>';
+    let playPauseButton = document.getElementById('play');
+    playPauseButton.setAttribute('action', 'continue');
+    playPauseButton.innerHTML = '<i class="fa-solid fa-play"></i>';
+}

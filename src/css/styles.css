@@ -41,6 +41,19 @@ main{
     background-color: #323232;
     border-radius: 0.4em;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+}
+
+#config{
+    font-size: 1.5em;
+    margin-bottom: 0.5rem;
+    color: #323232;
+    cursor: pointer;
+}
+
+#config:hover{
+    color: #404040;
 }
 
 #timer{
@@ -64,6 +77,9 @@ main{
     height: auto;
     cursor: pointer;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+#options button:hover{
+    color: #5A5A5A;
 }
 
 i {
