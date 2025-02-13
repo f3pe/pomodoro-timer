@@ -36,21 +36,22 @@ main{
     height: 100vh;
 }
 
-#container{
-    width: 18em;
-    background-color: #323232;
-    border-radius: 0.4em;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-}
-
 #config{
     font-size: 1.5em;
     margin-bottom: 0.5rem;
     color: #323232;
     cursor: pointer;
 }
+
+#container{
+    width: 18em;
+    background-color: #323232;
+    border-radius: 0.4em;
+    box-shadow: 0 0 1rem #D40909;
+    display: flex;
+    justify-content: center;
+}
+
 
 #config:hover{
     color: #404040;

@@ -44,11 +44,15 @@ function changeMode(){
         setTimer();
         breakFocusButton.setAttribute('action', 'focus');
         breakFocusButton.innerHTML = '<i class="fa-solid fa-bullseye"></i>';
+        document.getElementById('container').style.boxShadow = "0 0 1rem #39FF14";
+        document.getElementById('timer').style.color = "#39FF14";
     }else{
         timer = focusTime;
         setTimer();
         breakFocusButton.setAttribute('action', 'break');
         breakFocusButton.innerHTML = '<i class="fa-solid fa-mug-hot"></i>';
+        document.getElementById('container').style.boxShadow = "0 0 1rem #D40909"
+        document.getElementById('timer').style.color = "#D40909";
     }
     
     let playPauseButton = document.getElementById('play');
