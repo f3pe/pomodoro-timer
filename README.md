@@ -18,6 +18,6 @@ Acesse no link ao lado: [Pomodoro-timer](https://pomodoro-timer-chi-roan.vercel.
 ## To-do:
 - [x] Adicionar opção de personalizar o tempo de descanço e de foco
 - [ ] Adicionar pop-up de janela para alteração de tempo de descanço e foco
-- [ ] Mensagem ou indicação visual de mudança de estado de descaço para foco e vice-versa 
+- [x] Mensagem ou indicação visual de mudança de estado de descaço para foco e vice-versa 
 - [ ] Opção de transição de modo claro e modo escuro
 - [ ] Implementar worker para execução em segundo plano corretamente
