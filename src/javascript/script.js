@@ -87,3 +87,7 @@ function redefinir() {
     playPauseButton.setAttribute('action', 'continue');
     playPauseButton.innerHTML = '<i class="fa-solid fa-play"></i>';
 }
+
+if (window.Worker) {
+    const myWorker = new Worker("worker.js");
+}
