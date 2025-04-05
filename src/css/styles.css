@@ -9,7 +9,7 @@
 
 @font-face {
     font-family: 'Digital';
-    src: url('DS-DIGI.TTF') format('truetype');
+    src: url('../fonts/DS-DIGI.TTF') format('truetype');
 }
 
 body {

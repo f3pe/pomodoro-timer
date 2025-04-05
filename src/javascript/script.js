@@ -23,7 +23,8 @@ function toggleTimer() {
             setTimer();
             if (timer <= 0){
                 clearInterval(interval);
-                document.getElementById('audioPlayer').play()
+                document.getElementById('audioPlayer').play();
+                changeMode();
             }
         }, 1000);
         playPauseButton.setAttribute('action', 'pause');
